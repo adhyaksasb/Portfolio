@@ -17,11 +17,11 @@ const About = () => {
             <p>Hi, I'm Adhy, nice to meet you. Please take a look around</p>
           </div>
           <div>
-            Recent IT graduate with 2+ years experience focused on web
-            programming. In-depth knowledge of analysis, design, develop, and
-            maintaining web services. Skilled in HTML, CSS, PHP, Javascript,
-            JQuery, Bootstrap, TailwindCSS, MySQL, PostgreSQL, Laravel, Reactjs,
-            CodeIgniter.
+            Aspiring to be a full stack web developer, I am a highly motivated
+            and passionate individual seeking an opportunity to contribute my
+            expertise to an IT world. With a solid foundation in front-end and
+            back-end technologies, I am eager to create innovative and
+            user-centric web applications.
           </div>
         </div>
       </div>
