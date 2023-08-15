@@ -4,17 +4,18 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Forms from "./components/Forms";
+import Confirmation from "./components/Confirmation";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="test">
-      <Navbar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/message-sent" element={<Confirmation />} />
+      </Routes>
+    </>
   );
 }
 

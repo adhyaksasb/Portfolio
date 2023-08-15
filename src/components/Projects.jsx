@@ -1,6 +1,5 @@
 import React from "react";
-import WorkImg from "../assets/workImg.jpeg";
-import realEstate from "../assets/realestate.jpg";
+import ProjectItems from "./ProjectItems";
 
 const Projects = () => {
   return (
@@ -16,158 +15,36 @@ const Projects = () => {
           <p className="py-4">Check out some of my recent projects</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${realEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${realEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${WorkImg})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Grid Item */}
-          <div
-            style={{ backgroundImage: `url(${realEstate})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto projects-div"
-          >
-            {/* Hover Effects */}
-            <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-white tracking-wider">
-                Application
-              </span>
-              <div className="pt-8 text-center">
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
-                  </button>
-                </a>
-                <a href="">
-                  <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ProjectItems
+            title="KeluargaBahagia"
+            image="KeluargaBahagia.png"
+            skill="Laravel"
+            description="KeluargaBahagia is a multi purpose genealogy website built in php with Laravel framework. This project is still in progress, as of now, features such as genealogy tree, admin panel, multiple users (admin, family member), gallery, biography and dark theme are already completed. Features including forum discussion, social media, voting system and many more will be implemented in the future."
+            code="http://github.com/adhyaksasb/KeluargaBahagia"
+          />
+          <ProjectItems
+            title="MyCommerce"
+            image="myCommerce.png"
+            skill="Laravel | JQuery"
+            description="MyCommerce is a multi vendor e-commerce website built in php with Laravel framework. Dedicated features such as admin panel, multiple users (admin, vendor, customer), and many more. This project is still in progress, there will be many future features including SEO, implementing payment gateway api, and logistics api."
+            code="http://github.com/adhyaksasb/myCommerce"
+          />
+          <ProjectItems
+            title="Adhyaksasb Portfolio"
+            image="portfolio.png"
+            skill="React.js | TailwindCSS"
+            description="My portfolio website that showcasing all the skills that I have and all the projects that I had created. This simple portfolio website built with React.js and TailwindCSS was my first React.js project that I had created."
+            code="http://github.com/adhyaksasb/Portfolio"
+          />
+          <ProjectItems
+            title="Performance Analytics Scrum Team"
+            image="performanceAnalytics.png"
+            skill="Javascript | GraphQL API"
+            description="Performance Analytics Scrum Team built with plain javascript as the front-end and fetching real-time data from GitHub with GraphQL API as a back-end. This application serves to monitoring the issues in the GitHub repository and doing performance analytics of software development team using metric called lead time. This project was created for my college dissertation."
+            code="http://github.com/adhyaksasb/TugasAkhir"
+          />
         </div>
       </div>
     </div>

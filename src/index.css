@@ -14,18 +14,76 @@
   }
 }
 
+.top-to-btm {
+  position: relative;
+}
+.icon-position {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style {
+  background-color: #784390;
+  border: 2px solid #10142c;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+.icon-style:hover {
+  animation: none;
+  background: #10142c;
+  color: #784390;
+  border: 2px solid #784390;
+}
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.disableCaret {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
 .projects-div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 220px;
+  max-height: 1000px;
 }
 
 .projects-div:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(29, 78, 216, 0.8),
-    rgba(30, 64, 175, 0.8),
-    rgba(17, 24, 39, 0.8)
-  ) !important;
+  scale: 1.1;
+  padding: 5px;
+  background-color: #020d18;
+}
+
+.modal {
+  height: 400px;
+  width: 400px;
+}
+
+.floatRight {
+  margin-left: auto;
+  order: 2;
 }
