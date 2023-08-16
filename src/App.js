@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Forms from "./components/Forms";
 import Confirmation from "./components/Confirmation";
+import Loader from "./components/Loader";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
