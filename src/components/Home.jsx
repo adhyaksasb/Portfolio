@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Forms from "./Forms";
 import Navbar from "./Navbar";
+import Loader from "./Loader";
 import ScrollToTop from "./ScrollToTop";
 
 const Home = () => {
