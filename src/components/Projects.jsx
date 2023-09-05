@@ -18,9 +18,16 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
           <ProjectItems
+            title="SocialSparrow"
+            image="SocialSparrow.png"
+            skill="MERN Stack | Redux"
+            description="SocialSparrow is a social media website built in MERN Stack framework for the base, Redux for state management, Material UI as front-end react component for UI. Features that already been completed such as authentication, authorization, likes, comment, friend list, and profile page."
+            code="http://github.com/adhyaksasb/SocialSparrow"
+          />
+          <ProjectItems
             title="KeluargaBahagia"
             image="KeluargaBahagia.png"
-            skill="Laravel"
+            skill="Laravel | JQuery"
             description="KeluargaBahagia is a multi purpose genealogy website built in php with Laravel framework. This project is still in progress, as of now, features such as genealogy tree, admin panel, multiple users (admin, family member), gallery, biography and dark theme are already completed. Features including forum discussion, social media, voting system and many more will be implemented in the future."
             code="http://github.com/adhyaksasb/KeluargaBahagia"
           />
