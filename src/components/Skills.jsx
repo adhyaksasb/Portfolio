@@ -8,10 +8,14 @@ import php from "../assets/php.png";
 import mysql from "../assets/mysql.png";
 import postgre from "../assets/postgre.png";
 import tailwind from "../assets/tailwind.png";
-import bootstrap from "../assets/Bootstrap.png";
+import bootstrap from "../assets/bootstrap.svg";
 import laravel from "../assets/laravel.png";
 import codeigniter from "../assets/codeigniter.png";
 import jquery from "../assets/jquery.png";
+import node from "../assets/node.png";
+import mongo from "../assets/mongo.png";
+import express from "../assets/expressjs.svg";
+import reduxIcon from "../assets/redux.svg";
 
 const Skills = () => {
   return (
@@ -99,6 +103,30 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={jquery} alt="Jquery Icon" className="w-20 h-20 mx-auto" />
             <p className="my-4">Jquery</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img src={mongo} alt="Jquery Icon" className="w-20 h-20 mx-auto" />
+            <p className="my-4">MongoDB</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img src={node} alt="Jquery Icon" className="w-20 h-20 mx-auto" />
+            <p className="my-4">NodeJS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              src={express}
+              alt="Jquery Icon"
+              className="w-20 h-20 mx-auto"
+            />
+            <p className="my-4">ExpressJS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              src={reduxIcon}
+              alt="Jquery Icon"
+              className="w-20 h-20 mx-auto"
+            />
+            <p className="my-4">Redux</p>
           </div>
         </div>
       </div>

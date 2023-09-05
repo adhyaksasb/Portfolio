@@ -1,5 +1,4 @@
 import React from "react";
-import portfolio from "../assets/portfolio.png";
 
 const Modal = ({
   visible,
