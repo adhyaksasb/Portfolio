@@ -22,7 +22,7 @@ const Forms = () => {
     <>
       <div
         name="contact"
-        className="w-full h-screen bg-[#10142c]  flex justify-center items-center p-4"
+        className="w-full min-h-screen bg-[#10142c]  flex justify-center items-center p-4"
       >
         <iframe
           title="hiddenConfirm"
