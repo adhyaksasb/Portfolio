@@ -18,11 +18,21 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
           <ProjectItems
+            title="CommuniChat"
+            image="CommuniChat.png"
+            skill="Next.js 13"
+            description="CommuniChat is a messanger clone website built in Next.js 13 with additional library including pusher as a real-time websocket, cloudinary for image upload handling, MongoDB for database, PrismaDB as an ORM, and TailwindCSS for creating the UI."
+            code="http://github.com/adhyaksasb/CommuniChat"
+            isDeployed={true}
+            website="https://communichat-sepia.vercel.app/"
+          />
+          <ProjectItems
             title="SocialSparrow"
             image="SocialSparrow.png"
             skill="MERN Stack | Redux"
             description="SocialSparrow is a social media website built in MERN Stack framework for the base, Redux for state management, Material UI as front-end react component for UI. Features that already been completed such as authentication, authorization, likes, comment, friend list, and profile page."
             code="http://github.com/adhyaksasb/SocialSparrow"
+            isDeployed={false}
           />
           <ProjectItems
             title="KeluargaBahagia"
@@ -30,6 +40,7 @@ const Projects = () => {
             skill="Laravel | JQuery"
             description="KeluargaBahagia is a multi purpose genealogy website built in php with Laravel framework. This project is still in progress, as of now, features such as genealogy tree, admin panel, multiple users (admin, family member), gallery, biography and dark theme are already completed. Features including forum discussion, social media, voting system and many more will be implemented in the future."
             code="http://github.com/adhyaksasb/KeluargaBahagia"
+            isDeployed={false}
           />
           <ProjectItems
             title="MyCommerce"
@@ -37,6 +48,7 @@ const Projects = () => {
             skill="Laravel | JQuery"
             description="MyCommerce is a multi vendor e-commerce website built in php with Laravel framework. Dedicated features such as admin panel, multiple users (admin, vendor, customer), and many more. This project is still in progress, there will be many future features including SEO, implementing payment gateway api, and logistics api."
             code="http://github.com/adhyaksasb/myCommerce"
+            isDeployed={false}
           />
           <ProjectItems
             title="Adhyaksasb Portfolio"
@@ -44,6 +56,8 @@ const Projects = () => {
             skill="React.js | TailwindCSS"
             description="My portfolio website that showcasing all the skills that I have and all the projects that I had created. This simple portfolio website built with React.js and TailwindCSS was my first React.js project that I had created."
             code="http://github.com/adhyaksasb/Portfolio"
+            isDeployed={true}
+            website="https://adhyaksasb.netlify.app/"
           />
           <ProjectItems
             title="Performance Analytics Scrum Team"
@@ -51,6 +65,7 @@ const Projects = () => {
             skill="Javascript | GraphQL API"
             description="Performance Analytics Scrum Team built with plain javascript as the front-end and fetching real-time data from GitHub with GraphQL API as a back-end. This application serves to monitoring the issues in the GitHub repository and doing performance analytics of software development team using metric called lead time. This project was created for my college dissertation."
             code="http://github.com/adhyaksasb/TugasAkhir"
+            isDeployed={false}
           />
         </div>
       </div>

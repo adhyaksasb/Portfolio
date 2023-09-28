@@ -1,4 +1,4 @@
-import React from "react";
+import clsx from "clsx";
 
 const Modal = ({
   visible,
@@ -8,6 +8,8 @@ const Modal = ({
   skill,
   image,
   code,
+  isDeployed,
+  website,
 }) => {
   const handleOnClose = (e) => {
     if (
@@ -59,21 +61,38 @@ const Modal = ({
             </button>
           </div>
           <div class="p-6 space-y-6">
-            <img src={require(`../assets/${image}`)} />
+            <img src={require(`../assets/${image}`)} alt="Project" />
             <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
               {description}
             </p>
           </div>
           <div class="flex items-center p-6 space-x-2 justify-between border-t border-gray-200 rounded-b dark:border-gray-600">
-            <span class="text-white bg-[#10142c] hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-left">
-              <p className="cursor-default disableCaret">{skill}</p>
-            </span>
-            <a
-              href={code}
-              class="flex text-white bg-[#784390] hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right"
-            >
-              <p className="disableCaret">Source Code</p>
-            </a>
+            <div>
+              <span class="text-white bg-[#10142c] hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-left">
+                <p className="cursor-default disableCaret">{skill}</p>
+              </span>
+            </div>
+            <div className="flex gap-3">
+              <a
+                href={code}
+                class="flex text-white bg-gray-700 border-[1px] hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right"
+              >
+                <p className="disableCaret">Source Code</p>
+              </a>
+              <div className={clsx(!isDeployed && "cursor-not-allowed")}>
+                <a
+                  href={website}
+                  class={clsx(
+                    "flex text-white hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right",
+                    !isDeployed
+                      ? "pointer-events-none bg-gray-600"
+                      : "bg-[#784390]"
+                  )}
+                >
+                  <p className="disableCaret">Go to Website</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

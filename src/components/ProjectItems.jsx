@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import Modal from "../components/Modal";
 
-const ProjectItems = ({ title, image, skill, description, code }) => {
+const ProjectItems = ({
+  title,
+  image,
+  skill,
+  description,
+  code,
+  isDeployed,
+  website,
+}) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleOnClose = () => setShowModal(false);
@@ -19,9 +28,15 @@ const ProjectItems = ({ title, image, skill, description, code }) => {
           src={require(`../assets/${image}`)}
           className="rounded-md border border-[#784390]"
           onClick={() => setShowModal(true)}
+          alt="Project"
         />
         <div>
           <p className="text-gray-400 text-xs m-1 float-left">{skill}</p>
+          {isDeployed && (
+            <a href={website}>
+              <FaGlobe className="m-1 float-right" size={15} />
+            </a>
+          )}
           <a href={code}>
             <FaGithub className="m-1 float-right" size={15} />
           </a>
@@ -35,6 +50,8 @@ const ProjectItems = ({ title, image, skill, description, code }) => {
         description={description}
         skill={skill}
         code={code}
+        isDeployed={isDeployed}
+        website={website}
       />
     </>
   );

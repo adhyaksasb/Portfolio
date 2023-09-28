@@ -1,5 +1,3 @@
-import React from "react";
-
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import Javascript from "../assets/javascript.png";
@@ -16,6 +14,10 @@ import node from "../assets/node.png";
 import mongo from "../assets/mongo.png";
 import express from "../assets/expressjs.svg";
 import reduxIcon from "../assets/redux.svg";
+import prisma from "../assets/prisma.svg";
+import nextjs from "../assets/nextjs-13.svg";
+import cloudinary from "../assets/cloudinary.svg";
+import pusher from "../assets/pusher.svg";
 
 const Skills = () => {
   return (
@@ -105,17 +107,17 @@ const Skills = () => {
             <p className="my-4">Jquery</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={mongo} alt="Jquery Icon" className="w-20 h-20 mx-auto" />
+            <img src={mongo} alt="MongoDB Icon" className="w-20 h-20 mx-auto" />
             <p className="my-4">MongoDB</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img src={node} alt="Jquery Icon" className="w-20 h-20 mx-auto" />
+            <img src={node} alt="NodeJS Icon" className="w-20 h-20 mx-auto" />
             <p className="my-4">NodeJS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
               src={express}
-              alt="Jquery Icon"
+              alt="ExpressJS Icon"
               className="w-20 h-20 mx-auto"
             />
             <p className="my-4">ExpressJS</p>
@@ -123,10 +125,34 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img
               src={reduxIcon}
-              alt="Jquery Icon"
+              alt="Redux Icon"
               className="w-20 h-20 mx-auto"
             />
             <p className="my-4">Redux</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              src={nextjs}
+              alt="NextJS 13 Icon"
+              className="w-20 h-20 mx-auto"
+            />
+            <p className="my-4">NextJS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img src={pusher} alt="Pusher Icon" className="w-20 h-20 mx-auto" />
+            <p className="my-4">Pusher</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img src={prisma} alt="Prisma Icon" className="w-20 h-20 mx-auto" />
+            <p className="my-4">Prisma</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              src={cloudinary}
+              alt="Cloudinary Icon"
+              className="w-20 h-20 mx-auto"
+            />
+            <p className="my-4">Cloudinary</p>
           </div>
         </div>
       </div>

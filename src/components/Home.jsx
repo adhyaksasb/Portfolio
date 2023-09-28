@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import About from "./About";
 import Skills from "./Skills";
 import Projects from "./Projects";
-import Contact from "./Contact";
 import Forms from "./Forms";
 import Navbar from "./Navbar";
 import ScrollToTop from "./ScrollToTop";
