@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "./Loader";
 
