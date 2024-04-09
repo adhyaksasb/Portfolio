@@ -5,18 +5,27 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full md:min-h-screen bg-[#10142c]  text-gray-300"
+      className="w-full md:min-h-screen bg-[#10142c] flex items-center text-gray-300"
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full mt-24">
+        <div className="pb-4">
           <p className="text-4xl font-bold inline border-b-4 border-[#784390]">
             Projects
           </p>
-          <p className="py-4">Check out some of my recent projects</p>
+          <p className="py-3">Check out some of my recent projects</p>
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
+          <ProjectItems
+            title="PyramidDB"
+            image="PyramidDB.png"
+            skill="TALL Stack"
+            description="An essential tools and databases for Honkai: Star Rail. Made with TALL Stack"
+            code="http://github.com/adhyaksasb/PyramidDB"
+            isDeployed={true}
+            website="https://pyramid-db.vercel.app/"
+          />
           <ProjectItems
             title="CommuniChat"
             image="CommuniChat.png"

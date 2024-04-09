@@ -33,7 +33,7 @@ const ProjectItems = ({
         <div>
           <p className="text-gray-400 text-xs m-1 float-left">{skill}</p>
           {isDeployed && (
-            <a href={website}>
+            <a href={website} target="_blank" rel="noreferrer">
               <FaGlobe className="m-1 float-right" size={15} />
             </a>
           )}
