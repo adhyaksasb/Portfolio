@@ -141,13 +141,13 @@ const Navbar = () => {
       <div className="lg:hidden flex fixed flex-row top-[90%] left-0">
         <ul>
           <li className="w-[60px] h-[60px] flex justify-between items-center bg-[#565f69]">
-            <a
+            <button
               className="flex justify-between items-center w-full text-grey-300"
               href="#"
               onClick={() => window.open(cv)}
             >
               <BsFillPersonLinesFill size={30} />
-            </a>
+            </button>
           </li>
         </ul>
       </div>
