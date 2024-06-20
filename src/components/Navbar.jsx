@@ -2,98 +2,132 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { IoSunny, IoMoon } from "react-icons/io5";
 import Logo from "../assets/logo.png";
 import cv from "../assets/cv.pdf";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [dark, setDark] = useState(true);
+
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  };
+
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-6 bg-[#10142c] text-gray-300">
-      <div>
-        <Link to="home" smooth={true} duration={500} className="cursor-pointer">
-          <img src={Logo} alt="Logo" style={{ width: "60px" }} />
-        </Link>
-      </div>
-
-      {/* Menu */}
-      <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li>
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
-
-      {/* Hamburger */}
-      <div onClick={handleClick} className="cursor-pointer md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
-      </div>
-
-      {/* Mobile Menu */}
-      <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
-      >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-6 text-4xl">
+    <>
+      <div className="fixed w-full h-[80px] flex justify-between items-center px-6 bg-primary dark:bg-[#10142c] text-font2 dark:text-gray-300">
+        <div>
           <Link
-            onClick={handleClick}
-            to="projects"
+            to="home"
             smooth={true}
             duration={500}
+            className="cursor-pointer"
           >
-            Projects
+            <img src={Logo} alt="Logo" style={{ width: "60px" }} />
           </Link>
-        </li>
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-      </ul>
+        </div>
 
+        {/* Menu */}
+        <ul className="hidden md:flex">
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="projects" smooth={true} duration={500}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <button onClick={() => darkModeHandler()}>
+              {
+                dark && <IoSunny /> // render sunny when dark is true
+              }
+              {
+                !dark && <IoMoon /> // render moon when dark is false
+              }
+            </button>
+          </li>
+        </ul>
+
+        {/* Hamburger */}
+        <div onClick={handleClick} className="cursor-pointer md:hidden z-10">
+          {!nav ? <FaBars /> : <FaTimes />}
+        </div>
+
+        {/* Mobile Menu */}
+        <ul
+          className={
+            !nav
+              ? "hidden"
+              : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+          }
+        >
+          <li className="py-6 text-4xl">
+            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              onClick={handleClick}
+              to="skills"
+              smooth={true}
+              duration={500}
+            >
+              Skills
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              onClick={handleClick}
+              to="projects"
+              smooth={true}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="py-6 text-4xl">
+            <Link
+              onClick={handleClick}
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
       {/* Social Icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 text-white">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-700">
             <a
@@ -106,7 +140,7 @@ const Navbar = () => {
               <FaLinkedin size={30} />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3333]">
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-900">
             <a
               className="flex justify-between items-center w-full text-grey-300"
               href="https://github.com/adhyaksasb"
@@ -151,7 +185,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   );
 };
 

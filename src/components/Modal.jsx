@@ -26,19 +26,19 @@ const Modal = ({
       id="container"
       tabindex="-1"
       aria-hidden="true"
-      class="fixed bg-black bg-opacity-30 backdrop-blur-sm top-0 left-0 right-0 z-50 w-full p-4 flex justify-center items-center overflow-x- overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+      class="fixed bg-black bg-opacity-30 backdrop-blur-sm top-0 left-0 right-0 z-50 w-full h-full p-4 flex justify-center items-center overflow-x- overflow-y-auto md:inset-0 max-h-full"
     >
       <div class="relative w-full max-w-2xl max-h-full">
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-900">
           <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            <h3 class="text-xl font-semibold text-font1 dark:text-white">
               {title}
             </h3>
             <button
               onClick={handleOnClose}
               id="close"
               type="button"
-              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+              class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <svg
                 onClick={handleOnClose}
@@ -62,20 +62,20 @@ const Modal = ({
           </div>
           <div class="p-6 space-y-6">
             <img src={require(`../assets/${image}`)} alt="Project" />
-            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-200">
               {description}
             </p>
           </div>
           <div class="flex items-center p-6 space-x-2 justify-between border-t border-gray-200 rounded-b dark:border-gray-600">
             <div>
-              <span class="text-white bg-[#10142c] hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-left">
+              <span class="text-white bg-[#151c42] hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-left">
                 <p className="cursor-default disableCaret">{skill}</p>
               </span>
             </div>
             <div className="flex gap-3">
               <a
                 href={code}
-                class="flex text-white bg-gray-700 border-[1px] hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right"
+                class="flex text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right"
               >
                 <p className="disableCaret">Source Code</p>
               </a>
@@ -83,10 +83,10 @@ const Modal = ({
                 <a
                   href={website}
                   class={clsx(
-                    "flex text-white hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right",
+                    "flex text-white hover:bg-font2 dark:hover:bg-[#191f44] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center float-right",
                     !isDeployed
                       ? "pointer-events-none bg-gray-600"
-                      : "bg-[#784390]"
+                      : "bg-font1 dark:bg-[#784390]"
                   )}
                 >
                   <p className="disableCaret">Go to Website</p>

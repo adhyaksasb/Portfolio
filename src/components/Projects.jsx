@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full md:min-h-screen bg-[#10142c] flex items-center text-gray-300"
+      className="w-full md:min-h-screen bg-primary dark:bg-[#10142c] flex items-center text-font1 dark:text-gray-300"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full mt-24">
         <div className="pb-4">

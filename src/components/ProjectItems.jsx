@@ -19,7 +19,7 @@ const ProjectItems = ({
     <>
       <div className="group container rounded-md flex flex-col gap-y-1 mx-auto projects-div hover:cursor-pointer">
         <p
-          className="text-gray-300 font-bold m-1"
+          className="text-font1 dark:text-gray-300 font-bold m-1"
           onClick={() => setShowModal(true)}
         >
           {title}
@@ -31,7 +31,9 @@ const ProjectItems = ({
           alt="Project"
         />
         <div>
-          <p className="text-gray-400 text-xs m-1 float-left">{skill}</p>
+          <p className="text-font1 dark:text-gray-400 text-xs m-1 float-left">
+            {skill}
+          </p>
           {isDeployed && (
             <a href={website} target="_blank" rel="noreferrer">
               <FaGlobe className="m-1 float-right" size={15} />

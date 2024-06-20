@@ -73,9 +73,7 @@
 }
 
 .projects-div:hover {
-  scale: 1.1;
-  padding: 5px;
-  background-color: #020d18;
+  @apply bg-secondary dark:bg-[#020d18] scale-110 p-[5px] shadow-md;
 }
 
 .modal {
@@ -86,4 +84,8 @@
 .floatRight {
   margin-left: auto;
   order: 2;
+}
+
+.customButton {
+  @apply text-font1 dark:text-white border-2 border-font1 dark:border-white hover:bg-font2 hover:text-white hover:border-font2 dark:hover:bg-[#784390] dark:hover:border-[#784390];
 }
