@@ -23,9 +23,9 @@ const Home = () => {
             I'm a Full Stack Web Developer
           </h2>
           <p className="text-[#8892b0] py-4 max-w-[700px]">
-            Recent IT Graduate and an aspiring full stack developer focused on
-            web programming. In-depth knowledge of analysis, design, develop,
-            and maintaining web services. Skilled in HTML, CSS, PHP, Javascript,
+            IT undergraduate and an aspiring full stack developer focused on web
+            programming. In-depth knowledge of analysis, design, develop, and
+            maintaining web services. Skilled in HTML, CSS, PHP, Javascript,
             JQuery, Bootstrap, Laravel, Reactjs, CodeIgniter, MySQL, PostgreSQL.
           </p>
           <div>
