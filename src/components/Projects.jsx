@@ -18,6 +18,24 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
           <ProjectItems
+            title="Adhyaksasb Card Tree"
+            image="portfoliov2.png"
+            skill="SvelteKit (Svelte 5) | GSAP"
+            description="Adhyaksasb Card Tree is a website that show my simple portfolio (like a linktree). Made with SvelteKit and GSAP for the animation"
+            code="https://github.com/adhyaksasb/portfolio-v2"
+            isDeployed={true}
+            website="https://adhyaksasb.vercel.app/"
+          />
+          <ProjectItems
+            title="PyramidDBv2"
+            image="pyramidbv2.png"
+            skill="Golang | Svelte 5 | AWS"
+            description="Brand new PyramidDB. Created using Golang for back-end and SvelteKit for front-end"
+            code="https://github.com/adhyaksasb/pyramidb-fe"
+            isDeployed={true}
+            website="https://pyramidb-fe.vercel.app/"
+          />
+          <ProjectItems
             title="PyramidDB"
             image="PyramidDB.png"
             skill="TALL Stack"
