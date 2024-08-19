@@ -27,6 +27,15 @@ const Projects = () => {
             website="https://adhyaksasb.vercel.app/"
           />
           <ProjectItems
+            title="Employee Scheduler"
+            image="EmployeeScheduler.png"
+            skill="SvelteKit (Svelte 5)"
+            description="An autonomous employee scheduler made with SvelteKit"
+            code="https://github.com/adhyaksasb/employee-scheduler"
+            isDeployed={true}
+            website="https://generate-jadwal.vercel.app/"
+          />
+          <ProjectItems
             title="PyramidDBv2"
             image="pyramidbv2.png"
             skill="Golang | Svelte 5 | AWS"
