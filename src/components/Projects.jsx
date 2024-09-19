@@ -19,7 +19,7 @@ const Projects = () => {
           {/* Grid Items */}
           <ProjectItems
             title="DigiTS TelkomSchools"
-            image="portfoliov2.png"
+            image="DigiTS.png"
             skill="Laravel | NuxtJS"
             description="One of the academic information system application with microservices architecture that I have made on my professional career. It is created with Laravel for the backend and NuxtJS for the frontend."
             code="#"
