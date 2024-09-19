@@ -18,6 +18,15 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Grid Items */}
           <ProjectItems
+            title="DigiTS TelkomSchools"
+            image="portfoliov2.png"
+            skill="Laravel | NuxtJS"
+            description="One of the academic information system application with microservices architecture that I have made on my professional career. It is created with Laravel for the backend and NuxtJS for the frontend."
+            code="#"
+            isDeployed={true}
+            website="https://digits.telkomschools.sch.id/"
+          />
+          <ProjectItems
             title="Adhyaksasb Card Tree"
             image="portfoliov2.png"
             skill="SvelteKit (Svelte 5) | GSAP"
